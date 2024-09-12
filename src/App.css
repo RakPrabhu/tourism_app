@@ -1,38 +1,252 @@
-.App {
+
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-heading {
+    flex: 1;
+}
+
+.nav-link {
+  margin-left: 15px; /* Space between links */
+  margin-right: 15px; /* Space between links */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.dropdown-item {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #fff;
+}
+
+.custom-carousel {
+  margin-top: 20px;
+}
+
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* App.css */
+/* ... Existing styles (unchanged) */
+
+.custom-carousel {
+  margin-top: 20px;
+}
+
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.custom-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* App.css */
+/* ... Existing styles (unchanged) */
+
+
+
+.custom-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+/* Ensure the dropdown menu is positioned correctly */
+.custom-navbar .dropdown-menu {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the dropdown items to be inline */
+.custom-navbar .dropdown-menu .dropdown-item {
+  display: block;
+  margin: 0;
+  padding: 10px 15px; /* Adjust padding as needed */
+  white-space: nowrap;
+}
+
+/* Optional: Adjust the dropdown toggle to align with horizontal items */
+.custom-navbar .dropdown-toggle::after {
+  display: none; /* Hide the default dropdown indicator */
+}
+
+/* App.css */
+
+.custom-navbar {
+  background-color: #343a40;
+  padding: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+.custom-carousel {
+  margin-top: 56px; /* Adjust this value based on your navbar height */
+}
+
+.carousel-image {
+  height: 500px; /* Adjust based on your design */
+  object-fit: cover;
+}
+
+.custom-footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-section {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-links, .social-links {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer-link, .social-links a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-link:hover, .social-links a:hover {
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-caption h3 {
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
 }

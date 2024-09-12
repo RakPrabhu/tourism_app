@@ -1,0 +1,26 @@
+.gallery {
+    padding: 20px;
+  }
+  
+  .gallery-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-section {
+    margin-bottom: 20px;
+  }
+  
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+    justify-content: center;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  

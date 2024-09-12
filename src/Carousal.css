@@ -1,0 +1,22 @@
+/* Carousel.css */
+
+/* Carousel container */
+.custom-carousel {
+    margin-top: 20px;
+}
+
+/* Carousel images */
+.carousel-image {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Carousel caption */
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
